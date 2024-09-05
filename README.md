@@ -7,7 +7,7 @@ AWS Lambda layer for psycopg2
 ### For Python 3.12
 
 ```bash
-make PYTHON=3.12 ARCH=x86_64
+make PYTHON=3.12 ARCH=x86_64  # or ARCH=arm64
 ```
 
 ## Creating a layer

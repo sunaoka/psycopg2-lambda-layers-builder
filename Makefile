@@ -18,7 +18,9 @@ build:
 		--tag $(IMAGE) .
 
 	docker run --rm -v $(CURDIR):/data $(IMAGE) \
-		zip -r $(ZIP) /python
+		zip -rT $(ZIP) /python
+
+	docker rmi $(IMAGE)
 
 	@echo
 	@echo 'Run the following command to publish the lambda layer:'
